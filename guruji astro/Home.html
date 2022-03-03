@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Popp       ins&display=swap" rel="stylesheet">
+    <title>Guruji Astro</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header-content">
+        <div class="left">
+          <a href="#">
+            <img
+              src="./images/logo.png"
+              alt="logo"
+              style="height: 22.4px; width: 73.61px"
+            />
+          </a>
+          <span class="heading">Talk with astrologers</span>
+        </div>
+        <div class="right">
+          <div class="language" onclick="handleLanguage()">
+            <span class="select-language">English</span>
+            <span class="icon"
+              ><img
+                src="./images/dropdown.png"
+                style="width: 12px; height: 7.91px"
+            /></span>
+            <div class="pointer poi"></div>
+            <ul class="lang-option option">
+              <li>English</li>
+              <li>Hindi</li>
+              <li>Marathi</li>
+              <li>Malayalam</li>
+              <li>Kannada</li>
+              <li>Tamil</li>
+              <li>Telugu</li>
+            </ul>
+          </div>
+          <div class="wallet">
+            <span class="wallet-icon"><img src="./images/wallet.png" /></span>
+            <span class="balance">Rs.200</span>
+          </div>
+          <div class="profile" onclick="handleProfile()">
+            <div class="pro-img">
+              <img src="./images/Avatar.png" alt="profile-img" />
+            </div>
+            <div class="pro-pointer"></div>
+            <ul class="profile-detail">
+              <li class="pro-img-cont">
+                <div class="img-container">
+                  <img src="./images/Avatar.png" />
+                </div>
+                <p class="name">Phlipy</p>
+              </li>
+              <hr />
+              <li class="item">Order History</li>
+              <li class="item">Recharge History</li>
+              <li class="item">Followed astrologer</li>
+              <li class="item">Account setting</li>
+              <hr />
+              <li class="log-out">Log out</li>
+            </ul>
+          </div>
+          <div class="hamberger">
+            <img src="./images/menu.png" alt="">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <!-- banner section -->
+      <section class="banner">
+        <div class="banner-content">
+          <h1>Find your destiny and remedies with top expert astrologers</h1>
+          <hr />
+          <p>Call to consult with professional astrologers</p>
+          <div class="review-container">
+            <img src="./images/reviews.png" />
+          </div>
+          <div class="talk-button">Talk Now</div>
+        </div>
+      </section>
+
+      <!-- get answer section -->
+      <section class="answer">
+        <div class="ans-heading">
+          <h2>All the problem you can consult and get answer</h2>
+          <div class="tab-container">
+            <li class="tabs">Scenario</li>
+            <li class="tabs">Consult methods</li>
+          </div>
+        </div>
+        <div class="slide-images swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="img-item swiper-slide">
+              <img src="./images/img-1.png" />
+            </div>
+            <div class="img-item swiper-slide">
+              <img src="./images/img-2.png" />
+            </div>
+            <div class="img-item swiper-slide">
+              <img src="./images/img-3.png" />
+            </div>
+            <div class="img-item swiper-slide">
+              <img src="./images/img-4.png" />
+            </div>
+            <div class="img-item swiper-slide">
+              <img src="./images/img-5.png" />
+            </div>
+            <div class="img-item swiper-slide">
+              <img src="./images/img-6.png" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- astrology def section -->
+      <section class="def">
+        <div class="def-content">
+          <h2>
+            Why Astrology ？<span class="up-arrow"
+              ><img src="./images/Arrow.png"
+            /></span>
+          </h2>
+          <h3>Astrology reveals the will of the God</h3>
+          <p>
+            I want to speak like a native Japanese person. Learning a foreign
+            language has been eye opening, so I want to further improve my
+            Japanese skills. AmazingTalker is a flexible platform that lets me
+            schedule my lessons for whenever I need, select tutors that fit my
+            budget and needs, and even purchase a single lesson if I'd like.
+            Don’t put off learning a new language！
+          </p>
+          <p>
+            I learn foreign languages to expand my future plans. Language
+            learning lets me explore other interests and possibilities in my
+            life. AmazingTalker is a student-oriented platform, where I can
+            learn in my own pace. Tutors offer personalized courses based on my
+            learning needs. Thanks to AmazingTalker, language learning has
+            helped enrich my life.
+          </p>
+        </div>
+      </section>
+
+      <!-- reason section -->
+      <section class="reason">
+        <h2>4 Reason why you should choose Guruji</h2>
+        <div class="reason-wrapper">
+          <div class="reason-container">
+            <div class="reimg-container">
+              <img src="./images/document.png" />
+            </div>
+            <div class="text-container">
+              <h3>800+ Outstanding astrologers</h3>
+              <p>Verified and experience astrologersge</p>
+            </div>
+          </div>
+          <div class="reason-container">
+            <div class="reimg-container">
+              <img src="./images/messages.png" />
+            </div>
+            <div class="text-container">
+              <h3>Get your answer anytime anywhere</h3>
+              <p>You don't need astrologer near you</p>
+            </div>
+          </div>
+          <div class="reason-container">
+            <div class="reimg-container">
+              <img src="./images/to-do-list.png" />
+            </div>
+            <div class="text-container">
+              <h3>Diversified services</h3>
+              <p>
+                Tarot, Vedic, Vastu, Palmism, Face reading and anything you need
+              </p>
+            </div>
+          </div>
+          <div class="reason-container">
+            <div class="reimg-container">
+              <img src="./images/credit-card.png" />
+            </div>
+            <div class="text-container">
+              <h3>100% Guarantee???</h3>
+              <p>???????????????????????????</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- review section -->
+      <section class="review">
+        <div class="shield">
+          <span class="line"></span>
+          <span class="shield-container">
+            <img src="./images/shield.png" />
+          </span>
+          <span class="line"></span>
+        </div>
+        <div class="review-text">
+          <h2>100% Satisfaction guarantee</h2>
+          <p>
+            If you are not satisfied by your consultation. We promise you to
+            refund and you can take another Guruji
+          </p>
+        </div>
+        <div class="review-container">
+          <div class="review-box">
+            <div class="img-container">
+              <div class="img"><img src="./images/Avatar.png" /></div>
+            </div>
+            <div class="review-box-text">
+              <div class="top-text">
+                <h3>
+                  Swatanwa Astro to <span><a href="#">Exporu U</a></span>
+                </h3>
+                <img
+                  src="./images/star_five.svg"
+                  style="width: 99px; height: 19px"
+                />
+                <span>August 25th 2021</span>
+              </div>
+              <div class="middle-text">
+                <p>
+                  Gave me a basic understanding of some key words sand phrases
+                  which I really like it！Gave me a basic understanding of some
+                  key words sand phrases which I really like it like it like it
+                  like it.
+                </p>
+              </div>
+              <div class="bottom-text">
+                <span>Taort</span>
+                <span>Vedic</span>
+                <span>Ancient HinduAstrology</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="img-container">
+              <div class="img"><img src="./images/Avatar.png" /></div>
+            </div>
+            <div class="review-box-text">
+              <div class="top-text">
+                <h3>
+                  Swatanwa Astro to <span><a href="#">Exporu U</a></span>
+                </h3>
+                <img
+                  src="./images/star_five.svg"
+                  style="width: 99px; height: 19px"
+                />
+                <span>August 25th 2021</span>
+              </div>
+              <div class="middle-text">
+                <p>
+                  Gave me a basic understanding of some key words sand phrases
+                  which I really like it！Gave me a basic understanding of some
+                  key words sand phrases which I really like it like it like it
+                  like it.
+                </p>
+              </div>
+              <div class="bottom-text">
+                <span>Taort</span>
+                <span>Vedic</span>
+                <span>Ancient HinduAstrology</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="img-container">
+              <div class="img"><img src="./images/Avatar.png" /></div>
+            </div>
+            <div class="review-box-text">
+              <div class="top-text">
+                <h3>
+                  Swatanwa Astro to <span><a href="#">Exporu U</a></span>
+                </h3>
+                <img
+                  src="./images/star_five.svg"
+                  style="width: 99px; height: 19px"
+                />
+                <span>August 25th 2021</span>
+              </div>
+              <div class="middle-text">
+                <p>
+                  Gave me a basic understanding of some key words sand phrases
+                  which I really like it！Gave me a basic understanding of some
+                  key words sand phrases which I really like it like it like it
+                  like it.
+                </p>
+              </div>
+              <div class="bottom-text">
+                <span>Taort</span>
+                <span>Vedic</span>
+                <span>Ancient HinduAstrology</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="img-container">
+              <div class="img"><img src="./images/Avatar.png" /></div>
+            </div>
+            <div class="review-box-text">
+              <div class="top-text">
+                <h3>
+                  Swatanwa Astro to <span><a href="#">Exporu U</a></span>
+                </h3>
+                <img
+                  src="./images/star_five.svg"
+                  style="width: 99px; height: 19px"
+                />
+                <span>August 25th 2021</span>
+              </div>
+              <div class="middle-text">
+                <p>
+                  Gave me a basic understanding of some key words sand phrases
+                  which I really like it！Gave me a basic understanding of some
+                  key words sand phrases which I really like it like it like it
+                  like it.
+                </p>
+              </div>
+              <div class="bottom-text">
+                <span>Taort</span>
+                <span>Vedic</span>
+                <span>Ancient HinduAstrology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- steps to use section -->
+      <section class="steps">
+        <h2>How it works</h2>
+        <div class="steps-container">
+          <div class="steps-data">
+            <div class="img-cont">
+              <img src="./images/image1.png" />
+            </div>
+            <div class="text">
+              <h3>Find your Guruji</h3>
+              <p>
+                Browse astrologers and check their skills, specialties and
+                reviews. To find your destinated Guruji.
+              </p>
+            </div>
+          </div>
+          <div class="steps-data">
+            <div class="img-cont">
+              <img src="./images/image2.png" />
+            </div>
+            <div class="text">
+              <h3>Recharge for Consultation</h3>
+              <p>
+                After recharge, you can have the new user offer: ₹5/min and MAX
+                6 mins duration.
+              </p>
+            </div>
+          </div>
+          <div class="steps-data">
+            <div class="img-cont">
+              <img src="./images/image3.png" />
+            </div>
+            <div class="text">
+              <h3>Solve problem with astrologers</h3>
+              <p>
+                Call and Ask astrologers your problems.By providing your birth
+                chart, astrologer can help you get the answer.
+              </+p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- consultation section -->
+      <section class="consult">
+        <h2>Start your first consultation ＠₹5/min</h2>
+        <div class="consult-container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <a href="#">
+              <div class="consult-card">
+                <div class="img">
+                  <div class="img-cont">
+                    <img src="./images/astro.png" />
+                  </div>
+                </div>
+
+                <div class="rating">
+                  <span><img src="./images/str.png" alt="" /></span>
+                  <span class="num">4.7</span>
+                  <span class="val"> (238 total) </span>
+                </div>
+                <div class="detail">
+                  <h3>Swatanwa Astro</h3>
+                  <p>10+ years</p>
+                  <p>Hindi,English,Gujilate</p>
+                </div>
+                <div class="amt-time">
+                  <span class="real">₹20</span>
+                  <span class="min">/min</span>
+                  <span class="dep">₹20</span>
+                  <p>Est time~12mins</p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="consult-card">
+                <div class="img">
+                  <div class="img-cont">
+                    <img src="./images/astro.png" />
+                  </div>
+                </div>
+
+                <div class="rating">
+                  <span><img src="./images/str.png" alt="" /></span>
+                  <span class="num">4.7</span>
+                  <span class="val"> (238 total) </span>
+                </div>
+                <div class="detail">
+                  <h3>Swatanwa Astro</h3>
+                  <p>10+ years</p>
+                  <p>Hindi,English,Gujilate</p>
+                </div>
+                <div class="amt-time">
+                  <span class="real">₹20</span>
+                  <span class="min">/min</span>
+                  <span class="dep">₹20</span>
+                  <p>Est time~12mins</p>
+                </div>
+              </div>
+            </a> <a href="#">
+              <div class="consult-card">
+                <div class="img">
+                  <div class="img-cont">
+                    <img src="./images/astro.png" />
+                  </div>
+                </div>
+
+                <div class="rating">
+                  <span><img src="./images/str.png" alt="" /></span>
+                  <span class="num">4.7</span>
+                  <span class="val"> (238 total) </span>
+                </div>
+                <div class="detail">
+                  <h3>Swatanwa Astro</h3>
+                  <p>10+ years</p>
+                  <p>Hindi,English,Gujilate</p>
+                </div>
+                <div class="amt-time">
+                  <span class="real">₹20</span>
+                  <span class="min">/min</span>
+                  <span class="dep">₹20</span>
+                  <p>Est time~12mins</p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="consult-card">
+                <div class="img">
+                  <div class="img-cont">
+                    <img src="./images/astro.png" />
+                  </div>
+                </div>
+
+                <div class="rating">
+                  <span><img src="./images/str.png" alt="" /></span>
+                  <span class="num">4.7</span>
+                  <span class="val"> (238 total) </span>
+                </div>
+                <div class="detail">
+                  <h3>Swatanwa Astro</h3>
+                  <p>10+ years</p>
+                  <p>Hindi,English,Gujilate</p>
+                </div>
+                <div class="amt-time">
+                  <span class="real">₹20</span>
+                  <span class="min">/min</span>
+                  <span class="dep">₹20</span>
+                  <p>Est time~12mins</p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="more">
+                See more
+                <span><img src="./images/Arrow 1.png"></span>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="swiper-button-next"></div> -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- support section -->
+      <section class="support">
+        <h2>We protect the rights of users</h2>
+        <div class="wrapper">
+          <div class="container">
+            <img src="./images/im1.png">
+            <h3>Refund if unsatisfied</h3>
+          </div>
+          <div class="container">
+            <img src="./images/im2.png">
+            <h3>24*7 Customer support</h3>
+          </div>
+          <div class="container">
+            <img src="./images/im3.png">
+            <h3>100% quality guarantee</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- news section -->
+      <section class="news">
+        <h2>Guruji in News</h2>
+        <p>Our Sucess stories in Media Headlines and lots of Encouragement</p>
+        <div class="news-cont">
+          <div class="cont">
+            <img src="./images/news1.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news2.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news3.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news4.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news1.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news2.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news3.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news4.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news1.png">
+          </div>
+          <div class="cont">
+            <img src="./images/news2.png">
+          </div>
+        </div>
+      </section>
+
+      <!-- fotter section -->
+      <section class="footer">
+        <h2>What are you waiting for?</h2>
+        <div class="text">Talk Now</div>
+      </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        slidesPerGroup: 6,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
